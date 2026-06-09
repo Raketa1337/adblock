@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Настройки</title>
+  <style>
+    body { font-family: sans-serif; max-width: 480px; margin: 40px auto; padding: 0 16px; }
+    h1 { font-size: 18px; }
+    label { display: block; margin-top: 16px; font-size: 14px; }
+    input { width: 100%; padding: 8px; font-size: 14px; box-sizing: border-box; margin-top: 4px; }
+    button { margin-top: 16px; padding: 8px 16px; font-size: 14px; cursor: pointer; }
+    #status { margin-top: 12px; font-size: 13px; color: green; }
+    .hint { font-size: 12px; color: #666; margin-top: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Настройки Text Explainer</h1>
+  <label for="key">API-ключ DeepSeek (начинается с sk-...)</label>
+  <input type="password" id="key" placeholder="sk-...">
+  <div class="hint">Ключ хранится только на твоём компьютере.</div>
+  <button id="save">Сохранить</button>
+  <div id="status"></div>
+  <script src="options.js"></script>
+</body>
+</html>
